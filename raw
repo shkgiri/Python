@@ -1,0 +1,244 @@
+#!/usr/bin/env pytho
+# coding: utf-8
+
+
+# In[218]:
+
+
+
+
+#Playing with Variables
+a= "Hello"
+b= "Welcome to Python Learning"
+c= a +" "+b
+c_str = str(c)
+print (c_str)
+
+
+
+
+# In[219]:
+
+
+
+
+#Get input, Process and print
+test = input("typeanything")
+print (5*test)
+
+
+
+
+# In[225]:
+
+
+
+
+#Controling Input type Here we defined Integer
+test=int(input("type only Integer"))
+print (5*test)
+
+
+
+
+# In[222]:
+
+
+
+
+#If-then-Else
+x=float(input("type float value of x"))
+y=float(input("type y value"))
+if x==y:
+    print("X", x, "and Y" ,y ,"are equal")
+elif x > y:
+    print ("X is greater")
+else:
+    print ("y is greater")
+    
+    
+
+
+
+
+# In[226]:
+
+
+
+
+#While loop, if condition is met then execute
+x=1
+while x < 4: 
+    print (x)
+    x = x+1
+
+
+
+
+# In[182]:
+
+
+
+
+#i=0
+#y=6
+#for x in range (10): #range (start,stop,step)
+for i in range(5,20,5):
+    print (i)
+#Actually this loop goes 3 times, i value is less significat here
+    y=y+1
+    print ("y is",y)
+#to Break the loop with a condition
+    if y >15:
+        break
+y=6
+
+
+
+
+# In[168]:
+
+
+
+
+#Playing with strings
+x="Shankar"
+x[1], x[-3]
+
+
+
+
+# In[130]:
+
+
+
+
+print(len(x))
+
+
+
+
+# In[132]:
+
+
+
+
+#Slice strings [Start:stop:step]
+x="HellowHowAreYou"
+#get "low"
+x[3:6]
+
+
+
+
+# In[147]:
+
+
+
+
+#to get lwoAeo - this is good for obfuscations
+x[(len(x)-12):15:2]
+
+
+
+
+# In[141]:
+
+
+
+
+#Full string
+x[::]
+
+
+
+
+# In[145]:
+
+
+
+
+x[0:len(x):1]
+
+
+
+
+# In[175]:
+
+
+
+
+#Hellow to YeeelloWW and X is bound to be a new Object
+x="hello"
+x='Yee'+x[1:len(x)]+'WW'
+print (x)
+
+
+
+
+# In[176]:
+
+
+
+
+#We can call a variable inside a for loop "loop variable" Here X=YeeelloWW
+for shk in range (len(x)):
+    if x[shk] == 'i' or x[shk] == 'o':
+        print ("There is an i or o")
+
+
+
+
+# In[178]:
+
+
+
+
+#Another Pythonic Method
+for char in x:
+    if char == 'i' or char == 'o':
+        print ("There is an i or o")
+    
+
+
+
+
+# In[190]:
+
+
+
+
+#Cheer BoT Program
+word = input("Type your Name")
+#try to give error if input is wrong
+level =int(input("Enter Enthusiasm Level 1-10"))
+for j in range (len(word)):
+    print ("Give me an",word[j], "!")
+print ("What does it spells?")
+for k in range (level):
+    print(word,"!!!")
+
+
+
+
+
+
+# In[232]:
+
+
+
+
+#Guess and Check Cube Root
+#Meaning starts with 0x0x0,1x1x1, 2x2x2, 3x3x3 etc
+cube =int(input("Enter the cube Root"))
+for guess in range (abs(cube)+1):
+    if guess**3 > cube:
+        print ("Cube", cube, "is not a perfect Cube")
+        #How to find the nearest? 
+        print ("Nearest cube root of", cube, "is", guess-1, "and cube is", (guess-1)**3)
+        break
+    elif guess**3 == cube:
+        print ("Cube root of", cube, "is", guess)
+        break
+#How many gueeses it took and Try nearest to cube root to fractional granularity??Try it.
+        
