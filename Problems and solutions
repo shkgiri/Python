@@ -6,5 +6,9 @@ https://link.springer.com/article/10.1007/s10270-021-00898-7
 
 I have a real data in g sheet. Now change that in to list in python, then create a function in python that tells me if i am financially prepared. 
 
+Challenge:
+
+Mitre ATT&CK is a very good repository. But the conditions under which that attack can be performed is not coded any where. If we can create a python code representation of att&ck, that will be really good. We can do similar to PYTM and generate conditions.
+
 
 
